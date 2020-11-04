@@ -27,20 +27,18 @@ platform :android do
     gradle(task: "test")
   end
 
-  desc "Submit a new Beta Build to Crashlytics Beta"
-  lane :beta do
-    build
-
-    crashlytics
-  
-    # sh "your_script.sh"
-    # You can also use other beta testing services here
-  end
-
-  desc "Deploy a new version to the Google Play"
-  lane :deploy do
-    build
-
-    upload_to_play_store
+  desc "Build debug and test APK for screenshots"
+  lane :build_for_screengrab do
+    gradle(
+      task: 'clean'
+    )
+    gradle(
+      task: 'assemble',
+      build_type: 'Debug'
+    )
+    gradle(
+      task: 'assemble',
+      build_type: 'AndroidTest'
+    )
   end
 end

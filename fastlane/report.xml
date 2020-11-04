@@ -5,12 +5,27 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000574">
+      <testcase classname="fastlane.lanes" name="0: update_fastlane" time="3.987752">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: clean assembleRelease" time="18.057524">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000365">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: clean" time="1.895041">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: assembleDebug" time="14.586893">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: assembleAndroidTest" time="5.741419">
         
       </testcase>
     
